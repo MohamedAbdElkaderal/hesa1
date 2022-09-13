@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.cc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>م/محمد عبدالقادر</title>
+    <img src="" alt="">
+</head>
+
+<body>
+
+    <style>
+         :root {
+            /*   color variables */
+            --clr-primary: #6aeeb5;
+            --clr-primary-hover: #29e6a7;
+            --clr-primary-dark: #039d69;
+            --clr-gray100: #f0f7f8;
+            --clr-gray200: #cfd8dc;
+            /*   border radius */
+            --radius: 0.2rem;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Montserrat, sans-serif;
+            background: var(--clr-gray100);
+        }
+        
+        .nav-list {
+            background: white;
+            box-shadow: 0px 0px 10px var(--clr-gray200);
+            padding: 1rem 0;
+            border-radius: var(--radius);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .nav-item {
+            list-style: none;
+            margin-right: 2rem;
+        }
+        
+        .nav-item a {
+            text-decoration: none;
+            color: black;
+            transition: all 200ms ease-in;
+        }
+        
+        .nav-item a:hover {
+            color: var(--clr-primary-dark);
+        }
+        
+        .nav-item:first-child {
+            margin-right: auto;
+            margin-left: 2rem;
+        }
+        
+        .logo {
+            width: 10%;
+            height: 10%;
+        }
+        
+        .btn-primary {
+            font-family: Montserrat, sans-serif;
+            font-size: 1rem;
+            background: var(--clr-primary);
+            border : none;
+            transition: a;
+            border: none;
+            outline: none;
+            border-radius: var(--radius);
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: all 200ms ease-in;
+        }
+        
+        .btn-primary:hover {
+            background: var(--clr-primary-hover);
+        }
+    </style>
+
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+    </head>
+
+    <body>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#"><svg width="24" height="24"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">الحصص</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">الامتحانات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">الواجبات</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn-primary">تسجيل الدخول</button>
+                </li>
+            </ul>
+        </nav>
+    </body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box
+            }
+            
+            body {
+                font-family: Verdana, sans-serif;
+                margin: 0
+            }
+            
+            .mySlides {
+                display: none
+            }
+            
+            img {
+                vertical-align: middle;
+                border-radius: 8px;
+            }
+            
+            .slideshow-container {
+                max-width: 100%;
+                position: relative;
+                margin: auto;
+            }
+            
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            
+            .active,
+            .dot:hover {
+                background-color: #717171;
+            }
+            
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            
+            @media only screen and (max-width: 300px) {
+                .prev,
+                .next,
+                .text {
+                    font-size: 11px
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img2.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img1.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img1.jpg" style="width:100%">
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            setTimeout(slideIndex = slideIndex + 1, 1000);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+    </body>
+
+    </html>
+
+</body>
+
+</html>
